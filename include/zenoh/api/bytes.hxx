@@ -82,10 +82,10 @@ class Bytes : public Owned<::z_owned_bytes_t> {
     }
 
     /// @brief Construct by copying sequence of charactes.
-    Bytes(const char* v) : Bytes(std::string_view(v)) {};
+    Bytes(const char* v) : Bytes(std::string_view(v)) {}
 
     /// @brief Construct by copying sequence of charactes.
-    Bytes(const std::string& v) : Bytes(std::string_view(v)) {};
+    Bytes(const std::string& v) : Bytes(std::string_view(v)) {}
 
     /// @brief Construct by moving a string.
     Bytes(std::string&& v) : Bytes() {
